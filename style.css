@@ -1,0 +1,263 @@
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+body {
+  background-color: #B71C1C;
+  color: #fff;
+  font-family: sans-serif;
+  font-style: 1.5rem;
+  line-height: 1.5;
+  margin: 10PX 10PX;
+  min-height: 300vh;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+input {
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.search {
+  font-size: 1.5rem;
+  max-width: 25%;
+  opacity: 0.7;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search:hover {
+  max-width: 100%;
+  opacity: 1;
+}
+
+.search [type='search'] {
+  color: #000;
+  padding: 0.5em 0.2em;
+  border-radius: 20px;
+  width: 50%;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+}
+
+.search [type='search']:focus {
+  color: #000;
+  padding: 0.5em 0.5em;
+  width: 100%;
+  border-radius: 8px;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+}
+
+.movies {
+  display: grid;
+  grid-gap: 3em 1em;
+  grid-template-columns: repeat(auto-fill, minmax(10em, 2fr));
+  list-style: none;
+}
+
+.movie {
+  margin: 10px; 
+  opacity: 0.6;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, -webkit-transform 2s;
+  -o-transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  transition: width 2s, height 2s, transform 2s, -webkit-transform 2s;
+  -webkit-transform: rotate(15deg);
+      -ms-transform: rotate(15deg);
+          transform: rotate(15deg);
+}
+
+.movie__figure {
+  position: relative;
+}
+
+.movie__poster {
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.3em;
+}
+
+.movie:hover {
+  width: 200%;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  z-index: -1;
+  animate-name: zoom;
+  position: static;
+}
+
+.movie__vote {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f68d01;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 2.25em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.5em;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 75%;
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%);
+  width: 2.25em;
+}
+
+.movie__title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  text-align: center; 
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #7f0920;
+  color: #0a0408;
+  width: 100%;
+}
+
+#appTitle {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Staatliches', sans-serif;
+  font-size: 80px;
+  color: #fff;
+  text-shadow: 2px 2px 10px red;
+}
+
+#genreForm, #playBtn {
+  text-align: center;
+  margin: 0px auto;
+  display: block;
+  font-family: 'Fredoka One', sans-serif;
+}
+
+#movieInfo {
+  width:  80%;
+  margin:  32px auto;
+}
+
+#movieInfo:after {
+  content:  "Powered By: Meow.Nalini98";
+  display:  table;
+  clear:  both;
+  color: #fff;
+  font-weight: 900;
+  margin: 20px auto;
+}
+
+#moviePoster, #movieText {
+  width:  50%;
+  float:  center;
+  font-weight: 700;
+  font-size: 16px;
+  color: #fff;
+}
+
+img#moviePoster {
+  width:  100%;
+  height:  auto;
+  display:  block;
+  margin:  auto;
+}
+
+#movieText {
+  font-family: 'Questrial';
+  color: #FEFBEA;
+  line-height: 1.25;
+}
+
+#movieTitle, #movieOverview {
+  padding:  32px;
+}
+
+label {
+  display: block;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 200px;
+  height: auto;
+}
+
+#likeOrDislikeBtns {
+  text-align: center;
+  margin: 0px auto;  
+}
+
+#likeBtn, #dislikeBtn {
+  padding: 15px 25px;
+  font-size: 25px;
+  border-radius: 12px;
+  border-style: none;
+  cursor:  pointer;
+  opacity: 0.5;
+  margin: 2px;
+}
+
+#likeBtn:hover, #dislikeBtn:hover {
+  font-size: 60px;
+  border-radius: 30px;
+  border-style: none;
+  cursor:  pointer;
+  opacity: 1;  
+  margin: 20px;
+}
+
+#likeBtn {
+  background-color: #249e57;
+  color: #fff;
+}
+
+#dislikeBtn {
+  background-color: #B71C1C;
+  color: #fff;
+}
